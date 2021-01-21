@@ -17,9 +17,9 @@ const FollowupField = ({ name, options, onRemove, ...field }) => {
       </h3>
       <div>
         <label>Show this question if the answer is:</label>
-        <select name={`${name}.optionId`} {...field}>
+        <select name={`${name}.forAnswer`} {...field}>
           {options.map((option, i) => (
-            <option key={i} value={option.id || option.key}>
+            <option key={i} value={option.text}>
               {option.text}
             </option>
           ))}
@@ -32,7 +32,7 @@ const FollowupField = ({ name, options, onRemove, ...field }) => {
 
 const FollowupQuestion = ({ name }) => {
   return (
-    <Field name={`${name}.optionId`}>
+    <Field name={`${name}.forAnswer`}>
       {({ field, form: { values, setFieldValue } }) => {
         const parentName = parentFieldName(name);
         const followupQuestionName = `${parentName}.followupQuestion`;

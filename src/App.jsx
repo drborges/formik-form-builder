@@ -6,8 +6,6 @@ import FormQuestions from "./FormQuestions";
 
 import "./styles.css";
 
-const optionIdWithFollowup = uuid();
-
 const retroSurvey = {
   questions: [
     {
@@ -17,12 +15,12 @@ const retroSurvey = {
         { id: uuid(), text: "Super happy" },
         { id: uuid(), text: "Happy" },
         { id: uuid(), text: "Neutral" },
-        { id: optionIdWithFollowup, text: "Sad" }
+        { id: uuid(), text: "Sad" }
       ],
       followupQuestion: {
         id: uuid(),
         text: "Why so sad?",
-        optionId: optionIdWithFollowup
+        forAnswer: "Sad"
       }
     }
   ]

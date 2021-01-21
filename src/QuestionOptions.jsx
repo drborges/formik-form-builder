@@ -10,7 +10,7 @@ const QuestionOptions = ({ name }) => {
       render={({ name, push, form, remove }) => {
         const options = get(form.values, name, []);
         return (
-          <ul>
+          <ul className="options">
             <button onClick={() => push({ key: uuid() })}>Add Option</button>
             {/* it is not safe to use the interation index as key in this case because
               we can remove option items, which means items could share the same key in
