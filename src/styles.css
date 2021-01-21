@@ -1,0 +1,68 @@
+.App {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 30px;
+  border: thin solid #ddd;
+  margin: 20px 0;
+}
+
+.followup {
+  display: flex;
+  flex-direction: column;
+  border-top: thin solid #ddd;
+  margin-top: 20px;
+}
+
+.stretch {
+  width: 100%;
+}
+
+h2,
+h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question ul {
+  list-style: lower-latin;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+li > div {
+  display: flex;
+}
+
+li > div > input {
+  flex-grow: 1;
+  margin-right: 5px;
+}
+
+input,
+button,
+select {
+  padding: 10px;
+}
+
+input,
+button,
+select {
+  margin: 10px 0;
+}
+
+label {
+  margin-right: 5px;
+}
