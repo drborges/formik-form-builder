@@ -10,7 +10,6 @@ const parentFieldName = (name) => {
 };
 
 const FollowupField = ({ name, options, onRemove, ...field }) => {
-  console.log(">>>", field);
   return (
     <div className="followup">
       <h3>
